@@ -1,0 +1,58 @@
+{
+  "name": "@andyed/kinetic-type-engine",
+  "version": "0.1.0",
+  "description": "Composable physics primitives for kinetic typography. Text segmentation, line breaking, optimal recognition point math, per-chunk timing, trail/blur kinematics, layout-safety zoom limits, font metrics. Extracted from iBlipper; brand-neutral by design.",
+  "license": "MIT",
+  "author": "Andy Edmonds",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo 'tests are vitest-based; run from a consumer or scaffold vitest separately'",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "compromise": "^14.14.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "kinetic-typography",
+    "rsvp",
+    "typography",
+    "text-layout",
+    "animation-physics",
+    "chunking",
+    "line-breaking",
+    "orp",
+    "optimal-recognition-point"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyed/kinetic-type-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andyed/kinetic-type-engine/issues"
+  },
+  "homepage": "https://github.com/andyed/kinetic-type-engine#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
